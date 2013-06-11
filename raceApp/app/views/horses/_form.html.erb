@@ -15,6 +15,11 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
+  <div class="field">
+    <%= f.label :Ratio %><br />
+    <%= f.collection_select :ratio_id,
+    Ratio.all, :id, :tipo, :prompt => true %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

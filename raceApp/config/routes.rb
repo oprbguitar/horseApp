@@ -1,4 +1,10 @@
 RaceApp::Application.routes.draw do
+  resources :tipo_apuesta
+
+
+  resources :ratios
+
+
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
