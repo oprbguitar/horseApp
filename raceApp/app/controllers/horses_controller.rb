@@ -1,4 +1,5 @@
 class HorsesController < ApplicationController
+  before_filter :require_login
   # GET /horses
   # GET /horses.json
   def index
